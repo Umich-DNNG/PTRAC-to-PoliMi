@@ -12,7 +12,7 @@ The MCNPX-PoliMi code, a modified version of MCNPX, stores detailed particle col
 
 ### Methodology
 
-The script uses the `h5py` Python package to parse the MCNP6.3 HDF5 PTRAC output, focusing on the `ptrack` group, which contains datasets for all events in a history.
+The script uses the `h5py` Python package to parse the MCNP6.3 HDF5 PTRAC output, focusing on the `ptrack` group, which contains datasets for all events in a history. A detailed description of the script is included in [PTRAC_to_PoliMi.pdf](PTRAC_to_PoliMi.pdf).
 
 #### Data Extraction and Conversion
 The conversion process involves these steps:
@@ -32,16 +32,7 @@ While the MCNP6.3 PTRAC output is quite detailed, some fields required by the MC
 
 ### Verification and Results
 
-The functionality of the PTRAC-to-PoliMi script has been verified by comparing its output with the native output from MCNPX-PoliMi across various test cases.
-
-* **Energy Deposited**: Plots comparing the energy deposited show that the results from the PTRAC-derived data are highly consistent with the original PoliMi output. This confirms the accuracy of the energy deposition calculation method used in the script.
-
-* **Particle Number and Multiplicity**: Comparisons of detection rates versus particle number also demonstrate strong agreement between the two methods, indicating the script's capability to preserve the overall particle multiplicity distribution.
-
-* **Correlations**: Plots of time difference (cross-correlation) between detectors confirm that the PTRAC-to-PoliMi conversion accurately preserves the temporal correlations of particle events. This is a critical feature for advanced time-correlated measurements.
-
-
-These results validate that the `PTRAC-to-PoliMi` script successfully generates a compatible and accurate input file for post-processing with MPPost.
+The functionality of the PTRAC-to-PoliMi script has been verified **ONLY FOR ORGANIC SCINTILLATOR COLLISIONS** by comparing its output with the native output from MCNPX-PoliMi across various test cases. Results are appended to the description of the script in [PTRAC_to_PoliMi.pdf](PTRAC_to_PoliMi.pdf).
 
 ***
 
