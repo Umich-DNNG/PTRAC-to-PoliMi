@@ -6,7 +6,7 @@ A Python algorithm that uses the `h5py` package to read MCNP6.3's HDF5-formatted
 
 ### Motivation
 
-The MCNPX-PoliMi code, a modified version of MCNPX, stores detailed particle collision data in a specific file format for post-processing. This output is crucial for MPPost, a program that simulates detector responses and performs advanced data analysis. However, newer versions of MCNP, such as MCNP6.3, use a different HDF5 format for their Particle Track (PTRAC) output. The `PTRAC-to-PoliMi` script was developed to create a compatible collision data file from this modern PTRAC output, allowing users to leverage MPPost with MCNP6.3 simulation results.
+The MCNPX-PoliMi code, a modified version of MCNPX, stores detailed particle collision data in a specific file format for post-processing. This output is crucial for MPPost, a program that simulates detector responses and performs advanced data analysis. However, newer versions of MCNP, such as MCNP6.3, use a different format (HDF5) for their Particle Track (PTRAC) output. The `PTRAC-to-PoliMi` script was developed to create a compatible collision data file from this modern PTRAC output, allowing users to leverage MPPost with MCNP6.3 simulation results.
 
 ***
 
