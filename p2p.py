@@ -294,7 +294,7 @@ def process_ptrac_hdf5_to_polimi_ascii_parallel(ptrac_hdf5_path, polimi_ascii_pa
             
             # Use user input available CPU cores
 			num_workers = 6 # This works well locally on my Mac M4 processor.
-            num_workers = os.cpu_count() # Also uses virtual cores, use with caution
+            # num_workers = os.cpu_count() # Also uses virtual cores, use with caution
             print(f"Starting parallel processing on {num_workers} cores...")
             
             with concurrent.futures.ProcessPoolExecutor(max_workers=num_workers) as executor:
