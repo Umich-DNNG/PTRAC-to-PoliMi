@@ -12,7 +12,7 @@ The MCNPX-PoliMi code, a modified version of MCNPX, stores detailed particle col
 
 ### Methodology
 
-The script uses the `h5py` Python package to parse the MCNP6.3 HDF5 PTRAC output, which can output datasets for all particle events in a history. A detailed description of the script is included in [PTRAC_to_PoliMi.pdf](PTRAC_to_PoliMi.pdf).
+The script uses the `h5py` Python package to parse the MCNP6.3 HDF5 PTRAC output, which can output datasets for all particle events in a history. A detailed description of the script is included in [PTRAC_to_PoliMi.pdf](PTRAC_to_PoliMi.pdf) LA-UR-25-30501.
 
 #### Data Extraction and Conversion
 The conversion process involves these steps:
