@@ -1,6 +1,6 @@
 # PTRAC-to-PoliMi
 
-A Python algorithm that uses the `h5py` package to read MCNP6.3's HDF5-formatted PTRAC output and convert it into the space-delimited collision file format required by the MCNPX-PoliMi post-processor (MPPost).
+A Python algorithm that uses the `h5py` package to read MCNP6.3's HDF5-formatted PTRAC output and convert it into the space-delimited collision file format required by the MCNPX-PoliMi post-processor (MPPost). 
 
 ***
 
@@ -12,7 +12,7 @@ The MCNPX-PoliMi code, a modified version of MCNPX, stores detailed particle col
 
 ### Methodology
 
-The script uses the `h5py` Python package to parse the MCNP6.3 HDF5 PTRAC output, focusing on the `ptrack` group, which contains datasets for all events in a history. A detailed description of the script is included in [PTRAC_to_PoliMi.pdf](PTRAC_to_PoliMi.pdf).
+The script uses the `h5py` Python package to parse the MCNP6.3 HDF5 PTRAC output, which can output datasets for all particle events in a history. A detailed description of the script is included in [PTRAC_to_PoliMi.pdf](PTRAC_to_PoliMi.pdf).
 
 #### Data Extraction and Conversion
 The conversion process involves these steps:
